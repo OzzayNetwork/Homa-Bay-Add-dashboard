@@ -14216,7 +14216,7 @@ a.badge-white.focus, a.badge-white:focus {
 }
 
 .header__logo p{
-    font-size: 15px !important;
+    font-size: 15px;
 }
 
 .powerd-container{
@@ -15503,6 +15503,9 @@ thead.thead-dark tr th:hover{
       display: flex;
       justify-content: center;
       align-items: center;
+  }
+  .font-12px{
+    font-size: 12px !important;
   }
   
 

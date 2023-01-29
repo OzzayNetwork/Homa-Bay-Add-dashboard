@@ -569,9 +569,11 @@ img {
   height: 580px
 }
 .mockupImg {
-  height: 520px;
-  width: 380px
-  di
+  height: 320px;
+  /* width: 380px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .video-overlay {
   position: absolute;
