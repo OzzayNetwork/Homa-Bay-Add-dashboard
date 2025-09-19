@@ -154,8 +154,9 @@ function initMap() {
 
     //the map options
     var options = {
-        zoom: 15,
-        center: { lat: -0.5277193, lng: 34.4516239 }
+        zoom: 18,
+        center: {  lat: -0.1026, lng: 34.7489  }
+         
     }
 
 
@@ -258,295 +259,259 @@ function initMap() {
     });
 
 
-
-
-    //rented add plate
-    addMarker({
-       
-        coords: { lat: -0.5202634984912022, lng:34.4623504131566 },
-        iconImage: rentedPlate,
-        content: `<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
-            <span class="active-agent mr-2">
-            </span>1254THY<span></h6>
-
-            <div class="content-img-cont">
+// Rented ad plate 1
+addMarker({
+    coords: { lat: -0.1026, lng: 34.7489 }, // Updated coordinates
+    iconImage: rentedPlate,
+    content: `<p class="d-none">approved|identifier</p>
+        <h6 class="text-uppercase d-flex align-items-center">
+            <span class="active-agent mr-2"></span>1254THY<span></h6>
+        <div class="content-img-cont">
             <img class="mb-3" src="images/billboard-ads/sample.jpg" alt=""> 
-            </div>
-           
-            <p></span><strong class="">21 of 74 Days</strong><span></h6></p>
-            <div class="progress"> 
+        </div>
+        <p></span><strong class="">21 of 74 Days</strong><span></h6></p>
+        <div class="progress"> 
             <div class="progress-bar progress-bar-info" style="width: 21%" aria-valuenow="21" aria-valuemin="0" aria-valuemax="120"></div>
-            </div>
+        </div>
+        <p class="mt-4"><strong>Large Billboard</strong></p>
+        <p class="">Rented since <strong>20Th Oct, 2020</strong></p>
+        <p>Rented to <strong>Njupe LTD</strong></p>
+    `
+});
 
-            <p class="mt-4"><strong>Large Billboard</strong></p>
-            <p class="">Rented since <strong>20Th Oct, 2020</strong></p>
-            <p>Rented to <strong>Njupe LTD</strong></p>
-            `
-    });
-
-    //rented add plate
-    addMarker({
-        coords: { lat: -0.5604342100348233, lng: 34.45984764556554 },
-        iconImage: multiPlate,
-        content: `<p class="d-none">multi-plate|identifier</p><h6 class="text-uppercase d-flex align-items-center">
-            <span class="active-agent mr-2">
-            </span>1254THY<span></h6>
-            <p class="mb-4"><strong>Large Billboard</strong></p>
-
-            <p></span><strong class="">2 sides of 4 sides available</strong><span></h6></p>
-            <div class="progress"> 
+// Rented ad plate 2
+addMarker({
+    coords: { lat: -0.1028, lng: 34.7487 }, // Updated coordinates
+    iconImage: multiPlate,
+    content: `<p class="d-none">multi-plate|identifier</p>
+        <h6 class="text-uppercase d-flex align-items-center">
+            <span class="active-agent mr-2"></span>1254THY<span></h6>
+        <p class="mb-4"><strong>Large Billboard</strong></p>
+        <p></span><strong class="">2 sides of 4 sides available</strong><span></h6></p>
+        <div class="progress"> 
             <div class="progress-bar progress-bar-info" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-            <h5 class="text-primary mt-3"><strong>Renting details</strong></h5>
-           
-            <p class="mt-2 mb-2">Nouveta Ltd : 25th Nov, 2020 10:25PM - 25th Dec, 2020 10:25PM</p>
-
-            <p></span><strong>28 sides of 203 Days Remaining</strong><span></h6></p>
-            <div class="progress"> 
+        </div>
+        <h5 class="text-primary mt-3"><strong>Renting details</strong></h5>
+        <p class="mt-2 mb-2">Nouveta Ltd : 25th Nov, 2020 10:25PM - 25th Dec, 2020 10:25PM</p>
+        <p></span><strong>28 sides of 203 Days Remaining</strong><span></h6></p>
+        <div class="progress"> 
             <div class="progress-bar progress-bar-info" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
-            <hr>
-            <p>Kev & Co. Ltd : 28th Jan, 2020 09:23PM - 6Th Jan, 2020 12:00PM</p>
-            <p></span><strong>12 sides of 63 Days Remaining</strong><span></h6></p>
-            <div class="progress"> 
+        </div>
+        <hr>
+        <p>Kev & Co. Ltd : 28th Jan, 2020 09:23PM - 6Th Jan, 2020 12:00PM</p>
+        <p></span><strong>12 sides of 63 Days Remaining</strong><span></h6></p>
+        <div class="progress"> 
             <div class="progress-bar progress-bar-info" style="width: 54%" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+        </div>
+        <hr>
+        <p>Click to view more details</p>
+    `
+});
 
-            <hr>
-
-            <p>Click to view more details</p>
-
-           
-        
-           
-            `
-    });
-
-    //approved applications
-    addMarker({
-        coords: { lat:  -0.5406668966298305, lng: 34.46846861397245 },
-        iconImage: approved,
-        content: `<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
-            <span class="active-agent mr-2">
-            </span>Compliant<span></h6>
-            <div class="content-img-cont">
+// Approved applications
+addMarker({
+    coords: { lat: -0.1027, lng: 34.7488 }, // Updated coordinates
+    iconImage: approved,
+    content: `<p class="d-none">approved|identifier</p>
+        <h6 class="text-uppercase d-flex align-items-center">
+            <span class="active-agent mr-2"></span>Compliant<span></h6>
+        <div class="content-img-cont">
             <img class="mb-3" src="images/billboard-ads/890.jpg" alt=""> 
-            </div>
-            <p></span><strong class="">75 of 120 Days</strong><span></h6></p>
-            <div class="progress"> 
+        </div>
+        <p></span><strong class="">75 of 120 Days</strong><span></h6></p>
+        <div class="progress"> 
             <div class="progress-bar progress-bar-info" style="width: 71%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="120"></div>
-            </div>
+        </div>
+        <p class="mt-4"><strong>Large Billboard</strong></p>
+        <p class="">Approved on <strong>23rd Aug, 2020</strong></p>
+        <p>Owner <strong>Nouveta LTD</strong></p>
+    `
+});
 
-            <p class="mt-4"><strong>Large Billboard</strong></p>
-            <p class="">Approved on <strong>23rd Aug, 2020</strong></p>
-            <p>Owner <strong>Nouveta LTD</strong></p>
-           
-            `
-    });
-
-    //ongoing applications
-    addMarker({
-        coords: { lat: -0.5301610776428674, lng: 34.46174464233012 },
-        iconImage: ongoing,
-        content: `<p class="d-none">application|identifier</p><h6 class="text-uppercase d-flex align-items-center">
-            <span class="unclump-car mr-2">
-            </span>Pending application<span></h6>
-
-            <div class="content-img-cont">
+// Ongoing applications
+addMarker({
+    coords: { lat: -0.1029, lng: 34.7486 }, // Updated coordinates
+    iconImage: ongoing,
+    content: `<p class="d-none">application|identifier</p>
+        <h6 class="text-uppercase d-flex align-items-center">
+            <span class="unclump-car mr-2"></span>Pending application<span></h6>
+        <div class="content-img-cont">
             <img class="mb-3" src="images/billboard-ads/blinks.jpg" alt=""> 
-            </div>
-           
-           <p class="mt-4"><strong>Window Branding
-            </strong></p>
-            <p class="">Application Date <strong>23rd Aug, 2020</strong></p>
-            <p>Applicant <strong>Nouveta LTD</strong></p>
-           
-            `
-    });
+        </div>
+        <p class="mt-4"><strong>Window Branding</strong></p>
+        <p class="">Application Date <strong>23rd Aug, 2020</strong></p>
+        <p>Applicant <strong>Nouveta LTD</strong></p>
+    `
+});
 
-    //rejected/expired applications
-
-    addMarker({
-        coords: { lat: -0.5813859700286833, lng: 34.47353322912171 },
-        iconImage: rejected,
-        content: `<p class="d-none">application|identifier</p><h6 class="text-uppercase d-flex align-items-center">
-            <span class="offline-agent mr-2">
-            </span>Expired Advertisment<span></h6>
-            <div class="content-img-cont">
+// Rejected/expired applications
+addMarker({
+    coords: { lat: -0.1030, lng: 34.7485 }, // Updated coordinates
+    iconImage: rejected,
+    content: `<p class="d-none">application|identifier</p>
+        <h6 class="text-uppercase d-flex align-items-center">
+            <span class="offline-agent mr-2"></span>Expired Advertisement<span></h6>
+        <div class="content-img-cont">
             <img class="mb-3" src="images/billboard-ads/xmass2.jpg" alt=""> 
-            </div>
-           
-            <p></span><strong class="">Expired</strong><span></h6></p>
-            <div class="progress"> 
-            <div class="progress-bar progress-bar-dangger" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="120"></div>
-            </div>
+        </div>
+        <p></span><strong class="">Expired</strong><span></h6></p>
+        <div class="progress"> 
+            <div class="progress-bar progress-bar-danger" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="120"></div>
+        </div>
+        <p class="mt-4"><strong>Wall Wraps</strong></p>
+        <p class="">Approval Date <strong>23rd Aug, 2020</strong></p>
+        <p>Owner <strong>Nouveta LTD</strong></p>
+    `
+});
 
-            <p class="mt-4"><strong>Wall Wraps
-            </strong></p>
-            <p class="">Approval Date <strong>23rd Aug, 2020</strong></p>
-            <p>Owner <strong>Nouveta LTD</strong></p>
-           
-            `
-    });
-
-    //a rented add plate
-    addMarker({
-        coords: { lat: -0.597914094955173, lng: 34.48426327801944 },
-        iconImage: rentedPlate,
-        content: `<p class="d-none">approved|identifier</p><h6 class="text-uppercase d-flex align-items-center">
-            <span class="active-agent mr-2">
-            </span>WER456<span></h6>
-
-            <div class="content-img-cont">
+// A rented ad plate
+addMarker({
+    coords: { lat: -0.1031, lng: 34.7484 }, // Updated coordinates
+    iconImage: rentedPlate,
+    content: `<p class="d-none">approved|identifier</p>
+        <h6 class="text-uppercase d-flex align-items-center">
+            <span class="active-agent mr-2"></span>WER456<span></h6>
+        <div class="content-img-cont">
             <img class="mb-3" src="images/billboard-ads/nouveta.jpg" alt=""> 
-            </div>
-           
-            <p></span><strong class="">75 of 120 Days</strong><span></h6></p>
-            <div class="progress"> 
+        </div>
+        <p></span><strong class="">75 of 120 Days</strong><span></h6></p>
+        <div class="progress"> 
             <div class="progress-bar progress-bar-info" style="width: 71%" aria-valuenow="71" aria-valuemin="0" aria-valuemax="120"></div>
+        </div>
+        <p class="mt-4"><strong>Large Billboard</strong></p>
+        <p class="">Rented since <strong>23rd Aug, 2020</strong></p>
+        <p>Rented to <strong>Nouveta LTD</strong></p>
+    `
+});
+
+// Inactive agent 1
+addMarker({
+    coords: { lat: -0.1032, lng: 34.7483 }, // Updated coordinates
+    iconImage: inactiveAgent,
+    content: `<p class="d-none">agent|plate num</p>
+        <h6 class="text-capitalize d-flex align-items-center">
+            <span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
+        </h6>
+        <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+        <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+        <div class="listview text-align-left text-capitalize pl-0">  
+            <div class="listview__header text-align-left text-capitalize text-left">
+                <strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong>
+            </div> 
+            <div class="progress"> 
+                <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
+        </div>
+    `
+});
 
-            <p class="mt-4"><strong>Large Billboard</strong></p>
-            <p class="">Rented since <strong>23rd Aug, 2020</strong></p>
-            <p>Rented to <strong>Nouveta LTD</strong></p>
-           
-            `
-    });
+// Inactive agent 2
+addMarker({
+    coords: { lat: -0.1033, lng: 34.7482 }, // Updated coordinates
+    iconImage: inactiveAgent,
+    content: `<p class="d-none">agent|agent num</p>
+        <h6 class="text-capitalize d-flex align-items-center">
+            <span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
+        </h6>
+        <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+        <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong></p>
+        <div class="listview text-align-left text-capitalize pl-0">  
+            <div class="listview__header text-align-left text-capitalize text-left">
+                <strong>2MB data (25%)</strong> Consumed in the <strong>last 21 Days</strong>
+            </div> 
+            <div class="progress"> 
+                <div class="progress-bar progress-bar-success" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    `
+});
 
-    //inactive agent
-    addMarker({
-        
-        coords: { lat: -0.5235767708117604, lng:  34.473239927651484 },
-        iconImage: inactiveAgent,
-        content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
-    });
+// Active agent
+addMarker({
+    coords: { lat: -0.1034, lng: 34.7481 }, // Updated coordinates
+    iconImage: activeAgent,
+    content: `<p class="d-none">agent|plate num</p>
+        <h6 class="text-capitalize d-flex align-items-center">
+            <span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
+        </h6>
+        <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
+        <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
+        <div class="listview text-align-left text-capitalize pl-0">  
+            <div class="listview__header text-align-left text-capitalize text-left">
+                <strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong>
+            </div> 
+            <div class="progress"> 
+                <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    `
+});
 
-    //inactive agent
-    addMarker({
-         
-        coords: { lat: -0.5576652777102535, lng: 34.44307111461315 },
-        iconImage: inactiveAgent,
-        content: '<p class="d-none">agent|agent num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong></p> <div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>2MB data (25%)</strong> Consumed in the <strong>last 21 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-success" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div> </div></div>'
-    });
+// Damaged plate
+addMarker({
+    coords: { lat: -0.1035, lng: 34.7480 }, // Updated coordinates
+    iconImage: damagedPlate,
+    content: `<p class="d-none">plate|unique identifier</p>
+        <h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>KGYHU789</span></h6>
+        <P class="mb-4"><strong>City Clock</strong></>
+        <p class="pb-0 mb-0">Date registered as damaged <strong>29th Jan 2020 </strong> at 2:06 PM </strong></p>
+        <p>Date last rented <strong>2nd Jan 2020</strong></p>
+    `
+});
 
-    //active agent
-    addMarker({
+// Available for renting plate
+addMarker({
+    coords: { lat: -0.1036, lng: 34.7479 }, // Updated coordinates
+    iconImage: availablePlate,
+    content: `<p class="d-none">plate-available|unique identifier</p>
+        <h6 class="text-uppercase d-flex align-items-center">
+            <span class="unclump-car mr-2"></span> <span>PHTY4589</span>                   
+        </h6>
+        <p class="mb-4"><strong>Billboard</strong></p>
+        <p class="">Date last Rented <strong>26th Apr 2020 </strong></strong></p>
+        <p>Last Rented to <strong>Gina and Co.</strong></p>
+    `
+});
 
-         
-        coords: { lat: -0.570797124232124, lng: 34.456204363733285 },
-        iconImage: activeAgent,
-        content: `<p class="d-none">agent|plate num</p>
-            <h6 class="text-capitalize d-flex align-items-center">
-            <span class="offline-agent mr-2"></span> 
-            <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
-            </h6>
-             <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
-             <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
-             <div class="listview text-align-left text-capitalize pl-0">  
-             <div class="listview__header text-align-left text-capitalize text-left">
-             <strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong>
-             </div> 
-             <div class="progress"> 
-             <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-             </div>
-             </div>
-             </p> `
-    });
+// Incidents
+addMarker({
+    coords: { lat: -0.1037, lng: 34.7478 }, // Updated coordinates
+    iconImage: warning,
+    content: `<p class="d-none">incident|identifier</p>
+        <img class="mb-3" src="demo/img/widgets/photo-1564993719576-7b00be6317cd.jpg" alt=""> 
+        <h6> Violent Nairobian</h6> 
+        <p class="mb-0 pb-0">Reported By Tonny Jumba</p>
+        <strong class="text-info">20 Min Ago</strong>`
+});
 
-    //damaged plate
-    addMarker({
-        
-        coords: { lat: -0.5626678577744075, lng: 34.446661422489704 },
-        iconImage: damagedPlate,
-        content: `<p class="d-none">plate|unique identifier</p>
-            <h6 class="text-uppercase d-flex align-items-center"><span class=" mr-2 offline-agent"></span><span>KGYHU789</span></h6>
-            <P class="mb-4"><strong>City Clock</strong></>
-            <p class="pb-0 mb-0">Date registered as damaged <strong>29th Jan 2020 </strong> at 2:06 PM </strong></p>
-            <p>Date last rented <strong>2nd Jan 2020</strong></p>
-           
-            
-            `
-    });
+// Available plates coordinates
+addMarker({
+    coords: { lat: -0.1038, lng: 34.7477 }, // Updated coordinates
+    iconImage: availablePlate,
+    content: `<p class="d-none">plate-available|unique identifier</p>
+        <h6  class="text-uppercase d-flex align-items-center">
+        <span class="unclump-car mr-2"></span> <span>PH524589</span>     
+        </h6>
+        <p class="mb-4"><strong>Billboard</strong></p>
+        <p class="pb-0 mb-0">Date last rented <strong>26th Apr 2020 </strong></strong></p>
+        <p>Last rented to <strong>Gina and Co.</strong></p>
+    `
+});
 
-    //available for renting plate
-    addMarker({
-        
-        coords: { lat: -0.5335792017826858,lng:  34.45590880815301},
-        iconImage: availablePlate,
-        content: `<p class="d-none">plate-available|unique identifier</p>
-                <h6 class="text-uppercase d-flex align-items-center">
-                    <span class="unclump-car mr-2"></span> <span>PHTY4589</span>                   
-                </h6>
-                <p class="mb-4"><strong>Billboard</strong></p>
-                <p class="">Date last Rented <strong>26th Apr 2020 </strong></strong></p>
-               
-                <p>Last Rented to <strong>Gina and Co.</strong></p>
-                
-                `
-    });
+// City Hall
+addMarker({
+    coords: { lat: -0.1039, lng: 34.7476 }, // Updated coordinates
+    iconImage: hall_icon,
+    content: `<p class="d-none">collectionPoint|identifier</p><h4>City Hall</h4><P><strong>KES 5,230,600</strong> already collected</p>`,
+});
 
-    //incidents
+// RevenueSure Agent
+addMarker({
+    coords: { lat: -0.1040, lng: 34.7475 }, // Updated coordinates
+    iconImage: servicePoint,
+    content: '<p class="d-none">collectionPoint|identifier</p><h6>RevenueSure Agent</h6> <P><strong>KES 5,230,600</strong> already collected</p>'
+});
 
-    addMarker({
-      
-        coords: { lat: -0.5289420978923907,  lng: 34.464587918040074 },
-        iconImage: warning,
-        content: `<p class="d-none">incident|identifiret</p>
-            <img class="mb-3" src="demo/img/widgets/photo-1564993719576-7b00be6317cd.jpg" alt=""> 
-            <h6> Violent Nairobian</h6> 
-            <p class="mb-0 pb-0">Reported By Tonny Jumba</p>
-            <strong class="text-info">20 Min Ago</strong>`
-    });
-
-    //available plates coodinates
-    addMarker({
-       
-        coords: { lat:  -0.5255139990685842,  lng: 34.45755080520696 },
-        iconImage: availablePlate,
-        content: `<p class="d-none">plate-available|unique identifier</p>
-            <h6  class="text-uppercase d-flex align-items-center">
-            <span class="unclump-car mr-2"></span> <span>PH524589</span>     
-            </h6>
-            <p class="mb-4"><strong>Billboard</strong></p>
-
-            <p class="pb-0 mb-0">Date last rented <strong>26th Apr 2020 </strong></strong></p>
-            <p>Last rented to <strong>Gina and Co.</strong></p>
-            `
-    });
-
-    //city hall
-    addMarker({
-        
-        coords: { lat: -0.5278234971236025,lng: 34.46011303870643 },
-        iconImage: hall_icon,
-        content: `<p class="d-none">collectionPoint|identifier</p><h4>City Hall</h4><P><strong>KES 5,230,600</strong> already collected</p>`,
-
-    });
-
-    //sunken
-    //not applicable
-    // addMarker({
-    //     coords:{lat:-1.2924789,lng:36.8243687},
-    //     iconImage:offStreet,
-    //     content:'<p class="d-none">offstreetParking|identifier</p><h6>Sunken (Offstereet Parking)</h6> <P><strong>KES 5,230,600</strong> already collected</p>'
-    // });
-
-    //buss park
-    //not applicable
-    //  addMarker({
-    //     coords:{lat:-1.2867576,lng:36.8344851},
-    //     iconImage:bus,
-    //     content: '<p class="d-none">offstreetParking|identifier</p><h6>Bus Park (Offstreet Parking)</h6> <P><strong>KES 3,256,230</strong> already collected</p>'
-    // });
-
-    //service point or collection point
-    addMarker({
-        coords: { lat: -1.27576, lng: 36.834851 },
-        iconImage: servicePoint,
-        content: '<p class="d-none">collectionPoint|identifier</p><h6>RevenueSure Agent</h6> <P><strong>KES 5,230,600</strong> already collected</p>'
-    });
 
     //add marker function
     function addMarker(props) {
@@ -773,7 +738,7 @@ function initMap() {
         axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
                 params: {
                     address: location,
-                    key: 'AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8'
+                    key: 'AIzaSyBl3dCvpVQUs04SOTCHgITw4Ts79-dRcfI'
                 }
 
 
@@ -1036,7 +1001,7 @@ function initMap() {
 
     // reverse geo coding
     function reverseGeocoding(Latitude, longitude) {
-        const KEY = "AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8";
+        const KEY = "AIzaSyBl3dCvpVQUs04SOTCHgITw4Ts79-dRcfI";
         const LAT = -1.270102;
         const LNG = 36.8589333;
         let url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${Latitude},${longitude}&key=${KEY}`;
